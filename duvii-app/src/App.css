@@ -74,4 +74,23 @@
   font-family: "Poppins";
   color: #fff;
   font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-register:hover{
+  background-color: rgb(129,140,248);
+}
+.direction-login{
+  margin-top: 23px;
+  font-size: 17px;
+}
+
+.question-account{
+  color:  #a9a9a9
+}
+
+.redirection-login{
+  color: rgb(129,139,244);
+  font-weight: 650;
 }

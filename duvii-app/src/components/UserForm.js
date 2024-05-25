@@ -92,8 +92,11 @@ function UserForm() {
             </div>
         </form>
         <button className="button-register">Register</button>
-        <div></div>
+        <div className="direction-login"> 
+            <text className="question-account">Have an account?</text>
+            <text className="redirection-login">  Log in</text>
         </div>
+    </div>
     );
 }
 
