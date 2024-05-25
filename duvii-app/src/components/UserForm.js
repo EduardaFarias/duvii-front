@@ -33,6 +33,9 @@ function UserForm() {
     return (
 
         <div>
+            <div className="title-form">
+                Register
+            </div>
         <form onSubmit={handleSubmit} className="form">
             
             <div className="form">
@@ -88,6 +91,8 @@ function UserForm() {
                 </label>
             </div>
         </form>
+        <button className="button-register">Register</button>
+        <div></div>
         </div>
     );
 }
