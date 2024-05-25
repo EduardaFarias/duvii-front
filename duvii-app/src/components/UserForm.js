@@ -31,11 +31,17 @@ function UserForm() {
     };
 
     return (
+
+        <div>
         <form onSubmit={handleSubmit} className="form">
+            
             <div className="form">
-                <label>
-                    Nome:
+                <label className="form-item">
+                    <div className="camp-name">
+                        Nome:
+                    </div>
                     <input
+                        className="input-camp"
                         type="text"
                         name="name"
                         value={formData.name}
@@ -43,27 +49,37 @@ function UserForm() {
                     />
                 </label>
                 
-                <label>
-                    Nome:
+                <label className="form-item">
+                    <div className="camp-name">
+                        Nome de Usuário:
+                    </div>
                     <input
+                        className="input-camp"
                         type="text"
-                        name="name"
-                        value={formData.name}
+                        name="userName"
+                        value={formData.userName}
                         onChange={handleChange}
                     />
                 </label>
-                <label>
-                    Email:
+                <label className="form-item">
+                    <div className="camp-name">
+                        Email:
+                    </div>
                     <input
+                        className="input-camp"
                         type="text"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
                     />
-                </label>
-                <label>
-                    password:
+                </label >
+                
+                <label className="form-item">
+                    <div className="camp-name">
+                        Password
+                    </div>
                     <input
+                        className="input-camp"
                         type="text"
                         name="password"
                         value={formData.password}
@@ -72,6 +88,7 @@ function UserForm() {
                 </label>
             </div>
         </form>
+        </div>
     );
 }
 
